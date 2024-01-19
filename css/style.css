@@ -1412,7 +1412,7 @@ footer .lower_footer .gateway {
 }
 
 .art_page {
-  padding: 16px 0;
+  padding: 8px 0;
   background-color: transparent;
 }
 .art_page .prod_name {
@@ -1422,7 +1422,7 @@ footer .lower_footer .gateway {
   .art_page .prod_name {
     flex-direction: column;
     align-items: flex-start !important;
-    gap: 12px;
+    gap: 4px;
   }
 }
 .art_page .prod_name h3 {
@@ -1430,10 +1430,20 @@ footer .lower_footer .gateway {
   font-weight: 700;
   color: #131313;
 }
+@media (max-width: 575px) {
+  .art_page .prod_name h3 {
+    font-size: 14px;
+  }
+}
 .art_page .prod_name span {
   color: #D4AA4D;
   font-size: 20px;
   font-weight: 700;
+}
+@media (max-width: 575px) {
+  .art_page .prod_name span {
+    font-size: 14px;
+  }
 }
 .art_page .money_back {
   background-color: #D4AA4D;
@@ -1445,6 +1455,17 @@ footer .lower_footer .gateway {
   margin-bottom: 8px;
   width: -moz-fit-content;
   width: fit-content;
+}
+@media (max-width: 575px) {
+  .art_page .money_back {
+    padding: 4px 12px 4px 12px;
+  }
+  .art_page .money_back img {
+    width: 15px;
+  }
+  .art_page .money_back span {
+    font-size: 13px;
+  }
 }
 .art_page .row {
   gap: 8px;

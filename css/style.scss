@@ -871,13 +871,11 @@ footer {
             .prod_name {
                 flex-grow: 1;
                 text-align: center;
-
                 span {
                     font-size: 32px;
                     font-weight: 800;
                     color: $white;
                     margin-inline-end: 110px;
-
                     @media(max-width:1500px) {
                         margin-inline-end: 0;
                         font-size: 24px;
@@ -1560,28 +1558,33 @@ footer {
 }
 
 .art_page {
-    padding: 16px 0;
+    padding: 8px 0;
     background-color: transparent;
 
     .prod_name {
         margin-bottom: 8px;
-
         @media(max-width:767px) {
             flex-direction: column;
             align-items: flex-start !important;
-            gap: 12px;
+            gap: 4px;
         }
 
         h3 {
             font-size: 20px;
             font-weight: 700;
             color: #131313;
+            @media(max-width:575px) {
+                font-size: 14px;
+            }
         }
 
         span {
             color: $secColor;
             font-size: 20px;
             font-weight: 700;
+            @media(max-width:575px) {
+                font-size: 14px;
+            }
         }
     }
 .money_back{
@@ -1593,6 +1596,15 @@ footer {
     font-size: 14px;
     margin-bottom: 8px;
     width: fit-content;
+    @media(max-width:575px){
+        padding:4px 12px 4px 12px;
+        img{
+            width: 15px;
+        }
+        span{
+            font-size: 13px;
+        }
+    }
 }
     .row {
         gap: 8px;
