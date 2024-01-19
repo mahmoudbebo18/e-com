@@ -1537,7 +1537,7 @@ footer {
     }
 
     @media(max-width:767px) {
-        height: 500px;
+        height: auto;
     }
 
     img {
@@ -1557,7 +1557,7 @@ footer {
 }
 
 .art_page {
-    padding: 36px 0;
+    padding: 16px 0;
     background-color: transparent;
 
     .prod_name {

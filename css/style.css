@@ -1389,7 +1389,7 @@ footer .lower_footer .gateway {
 }
 @media (max-width: 767px) {
   .hero_art {
-    height: 500px;
+    height: auto;
   }
 }
 .hero_art img {
@@ -1407,7 +1407,7 @@ footer .lower_footer .gateway {
 }
 
 .art_page {
-  padding: 36px 0;
+  padding: 16px 0;
   background-color: transparent;
 }
 .art_page .prod_name {
