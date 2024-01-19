@@ -1539,6 +1539,9 @@ footer {
     @media(max-width:767px) {
         height: auto;
     }
+    @media(max-width:425px) {
+        height: 380px;
+    }
 
     img {
         height: 100%;
@@ -1561,7 +1564,7 @@ footer {
     background-color: transparent;
 
     .prod_name {
-        margin-bottom: 16px;
+        margin-bottom: 8px;
 
         @media(max-width:767px) {
             flex-direction: column;
@@ -1588,11 +1591,11 @@ footer {
     border-radius: 12px;
     color: $white;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     width: fit-content;
 }
     .row {
-        gap: 12px;
+        gap: 8px;
         padding-top: 16px;
         border-top: 2px solid #F5F5F5;
         @media(max-width:767px) {
@@ -1632,7 +1635,7 @@ footer {
                 width: 100%;
                 max-width: 100%;
                 flex: unset;
-                margin-top: 16px;
+                margin-top: 0px;
                 .content{
                     justify-content: center;
                 }
@@ -1817,7 +1820,7 @@ footer {
 }
 
 .min_footer {
-    padding: 28px 0 28px;
+    padding: 4px 0 4px;
     background-color: $white;
     position: fixed;
     bottom: 0;
