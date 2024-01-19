@@ -1411,17 +1411,18 @@ footer .lower_footer .gateway {
   background-color: transparent;
 }
 .art_page .prod_name {
-  margin-bottom: 42px;
+  margin-bottom: 16px;
 }
 @media (max-width: 767px) {
   .art_page .prod_name {
     flex-direction: column;
     align-items: flex-start !important;
+    gap: 12px;
   }
 }
 .art_page .prod_name h3 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   color: #131313;
 }
 .art_page .prod_name span {
@@ -1429,13 +1430,27 @@ footer .lower_footer .gateway {
   font-size: 20px;
   font-weight: 700;
 }
+.art_page .money_back {
+  background-color: #D4AA4D;
+  padding: 6px 12px 12px 12px;
+  gap: 8px;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .art_page .row {
   gap: 12px;
+  padding-top: 16px;
+  border-top: 2px solid #F5F5F5;
 }
 @media (max-width: 767px) {
   .art_page .row {
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 0 15px;
+    padding-top: 16px;
   }
 }
 .art_page .row .col-lg-4 {
@@ -1444,6 +1459,39 @@ footer .lower_footer .gateway {
 }
 .art_page .row .col-lg-4 .content {
   gap: 12px;
+}
+@media (max-width: 767px) {
+  .art_page .row .col-lg-4 .content {
+    gap: 8px;
+    background-color: transparent;
+    padding: 0;
+  }
+  .art_page .row .col-lg-4 .content img {
+    width: 30px;
+    height: 30px;
+  }
+  .art_page .row .col-lg-4 .content .inner h4 {
+    margin: 0;
+  }
+  .art_page .row .col-lg-4 .content .inner p {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .art_page .row .col-lg-4.last {
+    width: 100%;
+    max-width: 100%;
+    flex: unset;
+    margin-top: 16px;
+  }
+  .art_page .row .col-lg-4.last .content {
+    justify-content: center;
+  }
+}
+@media (max-width: 575px) {
+  .art_page .row .col-lg-4:nth-child(2) .content {
+    justify-content: flex-end;
+  }
 }
 
 .order {
@@ -1461,6 +1509,11 @@ footer .lower_footer .gateway {
   padding: 14px;
   border-radius: 4px;
   margin-bottom: 36px;
+}
+@media (max-width: 575px) {
+  .order h4 {
+    font-size: 14px;
+  }
 }
 .order .inner form label {
   font-size: 20px;
@@ -1586,10 +1639,16 @@ footer .lower_footer .gateway {
   font-weight: 700;
   margin-top: 21px;
 }
+@media (max-width: 575px) {
+  .order .inner form button {
+    padding: 16px;
+    font-size: 16px;
+  }
+}
 
 .min_footer {
   padding: 28px 0 64px;
-  background-color: #ffffff;
+  background-color: transparent;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -1622,4 +1681,27 @@ footer .lower_footer .gateway {
   font-size: 22px;
   font-weight: bold;
   text-align: center;
+  box-shadow: 0 0 5px #ccc;
+  animation: shake 6s linear infinite;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  border-radius: 16px;
+}
+@media (max-width: 575px) {
+  .min_footer .ord {
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
+@keyframes shake {
+  0%, 100%, 2%, 4%, 6%, 8% {
+    transform: rotate(0);
+  }
+  1%, 5% {
+    transform: rotate(5deg);
+  }
+  3%, 7% {
+    transform: rotate(-5deg);
+  }
 }/*# sourceMappingURL=style.css.map */

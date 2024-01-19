@@ -1561,16 +1561,17 @@ footer {
     background-color: transparent;
 
     .prod_name {
-        margin-bottom: 42px;
+        margin-bottom: 16px;
 
         @media(max-width:767px) {
             flex-direction: column;
             align-items: flex-start !important;
+            gap: 12px;
         }
 
         h3 {
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 700;
             color: #131313;
         }
 
@@ -1580,13 +1581,24 @@ footer {
             font-weight: 700;
         }
     }
-
+.money_back{
+    background-color: $secColor;
+    padding: 6px 12px 12px 12px;
+    gap: 8px;
+    border-radius: 12px;
+    color: $white;
+    font-size: 14px;
+    margin-bottom: 20px;
+    width: fit-content;
+}
     .row {
         gap: 12px;
-
+        padding-top: 16px;
+        border-top: 2px solid #F5F5F5;
         @media(max-width:767px) {
-            flex-direction: column;
+            flex-wrap: wrap;
             padding: 0 15px;
+            padding-top: 16px;
         }
     }
 
@@ -1596,6 +1608,42 @@ footer {
 
         .content {
             gap: 12px;
+            
+            @media(max-width:767px) {
+                gap: 8px;
+                background-color: transparent;
+                padding: 0;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+                .inner{
+                    h4{
+                        margin: 0;
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.last{
+            @media(max-width:575px){
+                width: 100%;
+                max-width: 100%;
+                flex: unset;
+                margin-top: 16px;
+                .content{
+                    justify-content: center;
+                }
+            }
+        }
+        &:nth-child(2){
+            .content{
+                @media(max-width:575px){
+                    justify-content: flex-end;
+                }
+            }
         }
     }
 }
@@ -1615,6 +1663,9 @@ footer {
         padding: 14px;
         border-radius: 4px;
         margin-bottom: 36px;
+        @media(max-width:575px){
+            font-size: 14px;
+        }
     }
 
     .inner {
@@ -1756,6 +1807,10 @@ footer {
                 font-size: 22px;
                 font-weight: 700;
                 margin-top: 21px;
+                @media(max-width:575px){
+                    padding: 16px;
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -1763,7 +1818,7 @@ footer {
 
 .min_footer {
     padding: 28px 0 64px;
-    background-color: $white;
+    background-color: transparent;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -1785,6 +1840,7 @@ footer {
             color: #818181;
             font-size: 20px;
             font-weight: 500;
+
         }
     }
 
@@ -1797,5 +1853,40 @@ footer {
         font-size: 22px;
         font-weight: bold;
         text-align: center;
+        box-shadow: 0 0 5px #ccc;
+        -webkit-animation: shake 6s linear infinite;
+        animation: shake 6s linear infinite;
+        animation-delay: 1s;
+        -webkit-animation-delay: 1s;
+        border-radius: 16px;
+        @media(max-width:575px){
+            padding: 16px;
+            font-size: 16px;
+        }
+    }
+}
+
+@keyframes shake {
+
+    0%,
+    100%,
+    2%,
+    4%,
+    6%,
+    8% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    1%,
+    5% {
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+
+    3%,
+    7% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
     }
 }
