@@ -147,4 +147,42 @@ $(document).ready(function () {
         // Add 'active' class to the parent li of the clicked radio
         $(this).closest('li').addClass('active');
     });
+
+
+    $('span.error').hide();
+    $('#checkForm').submit(function (event) {
+        // Prevent the form from submitting normally
+        event.preventDefault();
+
+        // Reset styles
+        $('.error').hide();
+        $('input').css('border-color', '');
+
+        // Check input values
+        var isValid = true;
+        $('input').each(function () {
+            var inputValue = $(this).val().trim();
+            if (inputValue === '') {
+                isValid = false;
+                $(this).css('border-color', 'red');
+                $(this).siblings('.error').show();
+                var element = $('#order');
+                if (element.length) {
+                    $('html, body').animate({
+                        scrollTop: element.offset().top
+                    }, 'slow');
+                }
+            } else {
+                // Hide error spans and remove red border for non-empty fields
+                $(this).siblings('.error').hide();
+                $(this).css('border-color', '');
+            }
+        });
+
+        // If all inputs are valid, submit the form
+        if (isValid) {
+            // Add your code to submit the form or perform other actions
+            alert('Form submitted successfully!');
+        }
+    });
 })

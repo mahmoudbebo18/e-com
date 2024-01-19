@@ -62,22 +62,25 @@
         </div>
     </section>
 
-    <section class="order">
+    <section id="order" class="order">
         <div class="container">
             <h4> للطلب أدخل معلوماتك أسفله وسنتصل بك لاحقا! </h4>
             <div class="inner">
                 
-                <form action="">
+                <form id="checkForm" action="">
                     <label for="name"> أدخل معلوماتك الشخصية </label>
                     <div class="row">
                         <div class="col-md-6">
                             <input name="name" type="text" placeholder="إسمك الكامل" />
+                            <span class="error"> رجاءا ادخال الاسم  </span>
                         </div>
                         <div class="col-md-6">
                             <input type="text" placeholder=" رقم الجوال " />
+                            <span class="error"> رجاءا ادخال  الجوال  </span>
                         </div>
                         <div class="col-md-12">
                             <input type="text" placeholder="  العنوان التفصيلي  " />
+                            <span class="error"> رجاءا ادخال العنوان  </span>
                         </div>
                     </div>
                     <label for="offer"> إختر العرض المناسب </label>
@@ -122,18 +125,18 @@
                             </div>
                         </li>
                     </ul>
-                    <button> إضغط هنا لتأكيد وإرسال الطلب </button>
-
+                    <button type="submit"> إضغط هنا لتأكيد وإرسال الطلب </button>
+                    <section class="min_footer">
+                        <div class="container">
+                            <button type="submit" class="ord"> إضغط هنا للطلب </button>
+                        </div>
+                    </section>
                 </form>
             </div>
         </div>
     </section>
 
-    <section class="min_footer">
-        <div class="container">
-            <a href="#" class="ord"> إضغط هنا للطلب </a>
-        </div>
-    </section>
+    
 </div>
 
     
