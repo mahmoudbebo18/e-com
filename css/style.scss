@@ -840,7 +840,8 @@ footer {
 
             .links {
                 color: $white;
-                .d-flex{
+
+                .d-flex {
                     gap: 5px;
                 }
 
@@ -1529,11 +1530,12 @@ footer {
 
 
 .hero_art {
-    height: 1200px;
+    height: 800px;
 
     @media(max-width:1400px) {
         height: 800px;
     }
+
     @media(max-width:767px) {
         height: 500px;
     }
@@ -1541,6 +1543,16 @@ footer {
     img {
         height: 100%;
         width: 100%;
+    }
+}
+
+.main_wrapper {
+    max-width: 800px;
+    margin: auto;
+
+    .container {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -1569,11 +1581,21 @@ footer {
         }
     }
 
-    .row .col-lg-4 {
-        max-width: 350px;
+    .row {
+        gap: 12px;
 
         @media(max-width:767px) {
-            max-width: unset;
+            flex-direction: column;
+            padding: 0 15px;
+        }
+    }
+
+    .row .col-lg-4 {
+        max-width: unset;
+        flex: 1;
+
+        .content {
+            gap: 12px;
         }
     }
 }
@@ -1582,7 +1604,10 @@ footer {
     background-color: #F3F3F3;
     padding: 44px 0;
     border-radius: 8px;
-
+    padding-bottom: 280px;
+    @media(max-width:575px){
+        padding-bottom: 450px;
+    }
     h4 {
         background-color: $mainColor;
         color: $white;
@@ -1741,6 +1766,14 @@ footer {
 .min_footer {
     padding: 28px 0 64px;
     background-color: $white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    max-width: 800px;
+    margin: auto;
+    transform: translateX(-50%);
+    z-index: 888;
 
     .links {
         margin-bottom: 32px;
