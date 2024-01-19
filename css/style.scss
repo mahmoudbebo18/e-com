@@ -1604,10 +1604,8 @@ footer {
     background-color: #F3F3F3;
     padding: 44px 0;
     border-radius: 8px;
-    padding-bottom: 280px;
-    @media(max-width:575px){
-        padding-bottom: 450px;
-    }
+    padding-bottom: 200px;
+
     h4 {
         background-color: $mainColor;
         color: $white;
