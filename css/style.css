@@ -717,8 +717,10 @@ footer .lower_footer .gateway {
   height: 100%;
 }
 .bread .container-fluid .bread_inner .links {
-  -moz-columns: #ffffff;
-       columns: #ffffff;
+  color: #ffffff;
+}
+.bread .container-fluid .bread_inner .links .d-flex {
+  gap: 5px;
 }
 .bread .container-fluid .bread_inner .links h4 {
   margin-bottom: 24px;
@@ -796,7 +798,7 @@ footer .lower_footer .gateway {
   right: 25px;
   gap: 30px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1500px) {
   .product_details .product_images .main_img .product_options {
     top: 12px;
     right: 12px;

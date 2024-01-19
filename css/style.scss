@@ -839,7 +839,10 @@ footer {
             height: 100%;
 
             .links {
-                columns: $white;
+                color: $white;
+                .d-flex{
+                    gap: 5px;
+                }
 
                 h4 {
                     margin-bottom: 24px;
@@ -922,7 +925,7 @@ footer {
                 right: 25px;
                 gap: 30px;
 
-                @media(max-width:767px) {
+                @media(max-width:1500px) {
                     top: 12px;
                     right: 12px;
 
