@@ -671,7 +671,12 @@ footer .lower_footer .social {
   gap: 19px;
 }
 footer .lower_footer .gateway {
-  gap: 34px;
+  gap: 16px;
+}
+footer .lower_footer .gateway img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 @media (max-width: 991px) {
   footer .lower_footer .lower_content {
